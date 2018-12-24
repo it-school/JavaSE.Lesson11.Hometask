@@ -18,10 +18,12 @@ public class Library
         else
             book.ID = this.books.get(this.books.size()-1).ID + 1;
 
-        // TODO использовать статическое поле класса Книга для хранения кол-ва добавленных книг
-        // TODO хранить счёткик добавленных за все время книг
-
         this.books.add(book);
+
+        // TODO использовать статическое поле класса Книга для хранения кол-ва добавленных книг
+        // т.е., хранить счётчик добавленных за все время книг
+        // DONE добавлено статическое поле number в классе Book4Library
+        Book4Library.number++;
     }
 
     public Library()
@@ -37,7 +39,7 @@ public class Library
     @Override
     public String toString()
     {
-        String result = "Library: \n";
+        String result = "Library " + Book4Library.number + ": \n";
         for (Book4Library book:this.books)
         {
             result += book + "\n";
