@@ -46,7 +46,6 @@ public class Main {
 
         System.out.println(library.searchByTitle("Alpha"));
 
-
         ArrayList<Integer> foundBooks = library.searchByTitleList("Alpha");
         for (int i : foundBooks)
         {
