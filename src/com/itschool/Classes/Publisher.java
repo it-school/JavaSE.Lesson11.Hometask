@@ -16,6 +16,6 @@ public class Publisher
     @Override
     public String toString()
     {
-        return "{" + this.title + ", webpage: " + this.webpage +   ", year=" + year +'}';
+        return "{" + this.title + ", webpage: " + this.webpage + ", year=" + year + "}";
     }
 }
